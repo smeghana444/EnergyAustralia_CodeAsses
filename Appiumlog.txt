@@ -1,0 +1,820 @@
+2023-06-29 11:10:01:335 [Appium] Welcome to Appium v1.22.3
+2023-06-29 11:10:01:336 [Appium] Non-default server args:
+2023-06-29 11:10:01:337 [Appium]   address: 127.0.0.1
+2023-06-29 11:10:01:337 [Appium]   basePath: /wd/hub/
+2023-06-29 11:10:01:337 [Appium]   sessionOverride: true
+2023-06-29 11:10:01:337 [Appium]   logFile: /Users/someghana/eclipse-workspace/Meghana/Code_Assessment/Appiumlog.txt
+2023-06-29 11:10:01:358 [Appium] Appium REST http interface listener started on 127.0.0.1:4723
+2023-06-29 11:10:01:517 [HTTP] --> GET /wd/hub/status
+2023-06-29 11:10:01:517 [HTTP] {}
+2023-06-29 11:10:01:518 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-06-29 11:10:01:519 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-06-29 11:10:01:523 [HTTP] <-- GET /wd/hub/status 200 4 ms - 68
+2023-06-29 11:10:01:523 [HTTP] 
+2023-06-29 11:10:02:051 [HTTP] Request idempotency key: 82221df5-c0b8-4a0b-909f-9bae94df5840
+2023-06-29 11:10:02:062 [HTTP] --> POST /wd/hub/session
+2023-06-29 11:10:02:062 [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","appium:automationName":"UiAutomator2","appium:deviceName":"Android SDK built for x86","appium:platformVersion":"10","platformName":"android"}}}
+2023-06-29 11:10:02:063 [W3C] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","appium:automationName":"UiAutomator2","appium:deviceName":"Android SDK built for x86","appium:platformVersion":"10","platformName":"android"}}]
+2023-06-29 11:10:02:063 [BaseDriver] Event 'newSessionRequested' logged at 1688037002063 (16:40:02 GMT+0530 (India Standard Time))
+2023-06-29 11:10:02:218 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-06-29 11:10:02:218 [Appium] There are no active sessions for cleanup
+2023-06-29 11:10:02:220 [BaseDriver] Creating session with W3C capabilities: {
+2023-06-29 11:10:02:220 [BaseDriver]   "alwaysMatch": {
+2023-06-29 11:10:02:221 [BaseDriver]     "platformName": "android",
+2023-06-29 11:10:02:221 [BaseDriver]     "appium:app": "/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk",
+2023-06-29 11:10:02:221 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-06-29 11:10:02:221 [BaseDriver]     "appium:deviceName": "Android SDK built for x86",
+2023-06-29 11:10:02:221 [BaseDriver]     "appium:platformVersion": "10"
+2023-06-29 11:10:02:221 [BaseDriver]   },
+2023-06-29 11:10:02:221 [BaseDriver]   "firstMatch": [
+2023-06-29 11:10:02:221 [BaseDriver]     {}
+2023-06-29 11:10:02:221 [BaseDriver]   ]
+2023-06-29 11:10:02:221 [BaseDriver] }
+2023-06-29 11:10:02:226 [BaseDriver] Session created with session id: a88f5b63-e57f-47c9-bf49-a74b9cf809f1
+2023-06-29 11:10:02:228 [BaseDriver] Using local app '/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk'
+2023-06-29 11:10:02:229 [UiAutomator2] Checking whether app is actually present
+2023-06-29 11:10:02:267 [ADB] Found 5 'build-tools' folders under '/Users/someghana/Library/Android/sdk' (newest first):
+2023-06-29 11:10:02:267 [ADB]     /Users/someghana/Library/Android/sdk/build-tools/34.0.0
+2023-06-29 11:10:02:268 [ADB]     /Users/someghana/Library/Android/sdk/build-tools/32.1.0-rc1
+2023-06-29 11:10:02:268 [ADB]     /Users/someghana/Library/Android/sdk/build-tools/32.0.0
+2023-06-29 11:10:02:268 [ADB]     /Users/someghana/Library/Android/sdk/build-tools/30.0.3
+2023-06-29 11:10:02:268 [ADB]     /Users/someghana/Library/Android/sdk/build-tools/30.0.2
+2023-06-29 11:10:02:269 [ADB] Using 'adb' from '/Users/someghana/Library/Android/sdk/platform-tools/adb'
+2023-06-29 11:10:02:270 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2023-06-29 11:10:02:282 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:02:283 [HTTP] {}
+2023-06-29 11:10:02:298 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:02:298 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:02:299 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:02:301 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 18 ms - 1948
+2023-06-29 11:10:02:301 [HTTP] 
+2023-06-29 11:10:02:444 [AndroidDriver] Retrieving device list
+2023-06-29 11:10:02:444 [ADB] Trying to find a connected android device
+2023-06-29 11:10:02:444 [ADB] Getting connected devices
+2023-06-29 11:10:02:466 [ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2023-06-29 11:10:02:466 [AndroidDriver] Looking for a device with Android '10.0.0'
+2023-06-29 11:10:02:467 [ADB] Setting device id to emulator-5554
+2023-06-29 11:10:02:467 [ADB] Getting device platform version
+2023-06-29 11:10:02:467 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-06-29 11:10:02:530 [ADB] Current device property 'ro.build.version.release': 10
+2023-06-29 11:10:02:530 [AndroidDriver] Using device: emulator-5554
+2023-06-29 11:10:02:531 [ADB] Using 'adb' from '/Users/someghana/Library/Android/sdk/platform-tools/adb'
+2023-06-29 11:10:02:531 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2023-06-29 11:10:02:552 [ADB] Setting device id to emulator-5554
+2023-06-29 11:10:02:553 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2023-06-29 11:10:02:592 [ADB] Current device property 'ro.build.version.sdk': 29
+2023-06-29 11:10:02:592 [ADB] Getting device platform version
+2023-06-29 11:10:02:592 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2023-06-29 11:10:02:640 [ADB] Current device property 'ro.build.version.release': 10
+2023-06-29 11:10:02:640 [ADB] Device API level: 29
+2023-06-29 11:10:02:640 [UiAutomator2] Relaxing hidden api policy
+2023-06-29 11:10:02:641 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-06-29 11:10:02:731 [AndroidDriver] Parsing package and activity from app manifest
+2023-06-29 11:10:02:771 [ADB] Package name: 'com.energyaustralia.codingtestsample'
+2023-06-29 11:10:02:771 [ADB] Main activity name: 'com.energyaustralia.codingtestsample.MainActivity'
+2023-06-29 11:10:02:772 [AndroidDriver] Parsed package and activity are: com.energyaustralia.codingtestsample/com.energyaustralia.codingtestsample.MainActivity
+2023-06-29 11:10:02:772 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2023-06-29 11:10:02:793 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2023-06-29 11:10:02:824 [AndroidDriver] Pushing settings apk to device...
+2023-06-29 11:10:02:825 [ADB] Getting install status for io.appium.settings
+2023-06-29 11:10:02:825 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-06-29 11:10:02:870 [ADB] 'io.appium.settings' is installed
+2023-06-29 11:10:02:870 [ADB] Getting package info for 'io.appium.settings'
+2023-06-29 11:10:02:870 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2023-06-29 11:10:02:928 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.4.0' >= '3.4.0')
+2023-06-29 11:10:02:928 [ADB] There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2023-06-29 11:10:02:928 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-06-29 11:10:02:929 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+2023-06-29 11:10:02:967 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-06-29 11:10:03:029 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-06-29 11:10:03:029 [Logcat] Starting logs capture with command: /Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2023-06-29 11:10:03:094 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to local port 8256
+2023-06-29 11:10:03:095 [ADB] Forwarding system: 8256 to device: 6790
+2023-06-29 11:10:03:095 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8256 tcp:6790'
+2023-06-29 11:10:03:135 [ADB] Getting install status for io.appium.uiautomator2.server
+2023-06-29 11:10:03:135 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-06-29 11:10:03:258 [ADB] 'io.appium.uiautomator2.server' is installed
+2023-06-29 11:10:03:259 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2023-06-29 11:10:03:259 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2023-06-29 11:10:03:484 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.27.0' >= '4.27.0')
+2023-06-29 11:10:03:485 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2023-06-29 11:10:03:485 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.27.0.apk
+2023-06-29 11:10:03:515 [ADB] Using 'apksigner.jar' from '/Users/someghana/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar'
+2023-06-29 11:10:03:517 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/someghana/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.27.0.apk
+2023-06-29 11:10:04:415 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-06-29 11:10:04:415 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-06-29 11:10:04:415 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-06-29 11:10:04:415 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-06-29 11:10:04:415 [ADB] 
+2023-06-29 11:10:04:415 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v4.27.0.apk'
+2023-06-29 11:10:04:415 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+2023-06-29 11:10:04:416 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2023-06-29 11:10:04:416 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+2023-06-29 11:10:04:457 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2023-06-29 11:10:04:457 [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2023-06-29 11:10:04:462 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/someghana/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2023-06-29 11:10:04:762 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-06-29 11:10:04:763 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-06-29 11:10:04:763 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-06-29 11:10:04:763 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-06-29 11:10:04:763 [ADB] 
+2023-06-29 11:10:04:763 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2023-06-29 11:10:04:763 [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2023-06-29 11:10:04:763 [UiAutomator2] Server packages are not going to be (re)installed
+2023-06-29 11:10:04:765 [UiAutomator2] Waiting up to 30000ms for services to be available
+2023-06-29 11:10:04:766 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2023-06-29 11:10:04:813 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2023-06-29 11:10:04:815 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2023-06-29 11:10:04:815 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2023-06-29 11:10:04:815 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2023-06-29 11:10:04:874 [ADB] Checking app cert for /Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk
+2023-06-29 11:10:04:895 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/someghana/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk
+2023-06-29 11:10:05:241 [ADB] apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+2023-06-29 11:10:05:242 [ADB] Signer #1 certificate SHA-256 digest: 38918004a1af025e5fa07fc8e116a73c032797d438e27933ea04ba2727f9424d
+2023-06-29 11:10:05:242 [ADB] Signer #1 certificate SHA-1 digest: 385f80d48b10faddfee01f1768df9e125b896921
+2023-06-29 11:10:05:242 [ADB] Signer #1 certificate MD5 digest: a55d92c17a3944e913be2994adfb2c2e
+2023-06-29 11:10:05:242 [ADB] 
+2023-06-29 11:10:05:242 [ADB] '/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk' is signed with a non-default certificate
+2023-06-29 11:10:05:242 [ADB] Getting install status for com.energyaustralia.codingtestsample
+2023-06-29 11:10:05:242 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:283 [ADB] 'com.energyaustralia.codingtestsample' is installed
+2023-06-29 11:10:05:283 [ADB] Getting package info for 'com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:283 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:341 [ADB] The version name of the installed 'com.energyaustralia.codingtestsample' is greater or equal to the application version name ('1.0.0' >= '1.0.0')
+2023-06-29 11:10:05:341 [ADB] There is no need to install/upgrade '/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk'
+2023-06-29 11:10:05:342 [AndroidDriver] Performing fast reset on 'com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:342 [ADB] Getting install status for com.energyaustralia.codingtestsample
+2023-06-29 11:10:05:342 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:379 [ADB] 'com.energyaustralia.codingtestsample' is installed
+2023-06-29 11:10:05:379 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:445 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.energyaustralia.codingtestsample'
+2023-06-29 11:10:05:641 [AndroidDriver] Performed fast reset on the installed 'com.energyaustralia.codingtestsample' application (stop and clear)
+2023-06-29 11:10:05:642 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2023-06-29 11:10:05:704 [UiAutomator2] The following obsolete sessions are still running: ["eefa2718-c0c6-4909-9433-c494ed57c353"]
+2023-06-29 11:10:05:705 [UiAutomator2] Cleaning up 1 obsolete session
+2023-06-29 11:10:06:738 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2023-06-29 11:10:06:807 [UiAutomator2] Starting UIAutomator2 server 4.27.0
+2023-06-29 11:10:06:807 [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.27.0.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2023-06-29 11:10:06:807 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2023-06-29 11:10:06:808 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2023-06-29 11:10:06:811 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-06-29 11:10:06:812 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8256/wd/hub/status] with no body
+2023-06-29 11:10:06:832 [WD Proxy] socket hang up
+2023-06-29 11:10:07:281 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:07:281 [HTTP] {}
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:07:282 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:07:283 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:07:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:07:283 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:07:283 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:07:284 [HTTP] 
+2023-06-29 11:10:07:792 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2023-06-29 11:10:07:837 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-06-29 11:10:07:838 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8256/wd/hub/status] with no body
+2023-06-29 11:10:07:846 [WD Proxy] socket hang up
+2023-06-29 11:10:08:847 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-06-29 11:10:08:847 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8256/wd/hub/status] with no body
+2023-06-29 11:10:08:866 [WD Proxy] socket hang up
+2023-06-29 11:10:09:868 [WD Proxy] Matched '/status' to command name 'getStatus'
+2023-06-29 11:10:09:868 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8256/wd/hub/status] with no body
+2023-06-29 11:10:10:018 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2023-06-29 11:10:10:019 [UiAutomator2] The initialization of the instrumentation process took 3211ms
+2023-06-29 11:10:10:019 [WD Proxy] Matched '/session' to command name 'createSession'
+2023-06-29 11:10:10:019 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8256/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"Android SDK built for x86","platformVersion":"10"},"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554","appPackage":"com.energyaustralia.codingtestsample"}],"alwaysMatch":{}}}
+2023-06-29 11:10:10:085 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"Android SDK built for x86","platformVersion":"10"},"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554","appPackage":"com.energyaustralia.codingtestsample"}],"alwaysMatch":{}},"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324"}}
+2023-06-29 11:10:10:085 [WD Proxy] Determined the downstream protocol as 'W3C'
+2023-06-29 11:10:10:092 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/appium/device/info] with no body
+2023-06-29 11:10:10:146 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"androidId":"3c2cf7efe892f8fe","apiVersion":"29","bluetooth":null,"brand":"google","carrierName":"Android","displayDensity":240,"locale":"en_US","manufacturer":"Google","model":"Android SDK built for x86","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":1048576,"linkUpstreamBandwidthKbps":1048576,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-30,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":null,"isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":102400,"linkUpstreamBandwidthKbps":51200,"networkCapa...
+2023-06-29 11:10:10:146 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2023-06-29 11:10:10:199 [AndroidDriver] Screen already unlocked, doing nothing
+2023-06-29 11:10:10:199 [UiAutomator2] Starting 'com.energyaustralia.codingtestsample/com.energyaustralia.codingtestsample.MainActivity and waiting for 'com.energyaustralia.codingtestsample/com.energyaustralia.codingtestsample.MainActivity'
+2023-06-29 11:10:10:200 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n com.energyaustralia.codingtestsample/com.energyaustralia.codingtestsample.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2023-06-29 11:10:12:283 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:12:283 [HTTP] {}
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:12:284 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:12:285 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:12:286 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 4 ms - 1948
+2023-06-29 11:10:12:287 [HTTP] 
+2023-06-29 11:10:12:510 [ADB] Waiting up to 20000ms for activity matching pkg: 'com.energyaustralia.codingtestsample' and activity: 'com.energyaustralia.codingtestsample.MainActivity' to be focused
+2023-06-29 11:10:12:511 [ADB] Possible activities, to be checked: 'com.energyaustralia.codingtestsample.MainActivity', 'com.energyaustralia.codingtestsample.com.energyaustralia.codingtestsample.MainActivity'
+2023-06-29 11:10:12:511 [ADB] Getting focused package and activity
+2023-06-29 11:10:12:512 [ADB] Running '/Users/someghana/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window displays'
+2023-06-29 11:10:12:573 [ADB] Found package: 'com.energyaustralia.codingtestsample' and fully qualified activity name : 'com.energyaustralia.codingtestsample.MainActivity'
+2023-06-29 11:10:12:581 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/appium/device/pixel_ratio] with no body
+2023-06-29 11:10:12:604 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":1.5}
+2023-06-29 11:10:12:605 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2023-06-29 11:10:12:605 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/appium/device/system_bars] with no body
+2023-06-29 11:10:12:637 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"statusBar":36}}
+2023-06-29 11:10:12:638 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2023-06-29 11:10:12:638 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/window/current/size] with no body
+2023-06-29 11:10:12:667 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"height":800,"width":480}}
+2023-06-29 11:10:12:668 [Appium] New AndroidUiautomator2Driver session created successfully, session a88f5b63-e57f-47c9-bf49-a74b9cf809f1 added to master session list
+2023-06-29 11:10:12:668 [BaseDriver] Event 'newSessionStarted' logged at 1688037012668 (16:40:12 GMT+0530 (India Standard Time))
+2023-06-29 11:10:12:669 [W3C (a88f5b63)] Cached the protocol value 'W3C' for the new session a88f5b63-e57f-47c9-bf49-a74b9cf809f1
+2023-06-29 11:10:12:669 [W3C (a88f5b63)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"Android SDK built for x86","platformVersion":"10"},"platformName":"android","app":"/Users/someghana/eclipse-workspace/Meghana/Code_Assessment/src/main/java/com/usga/qa/testdata/RecordLabelApp.apk","automationName":"UiAutomator2","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554","appPackage":"com.energyaustralia.codingtestsample","deviceApiLevel":29,"deviceScreenSize":"480x800","deviceScreenDensity":240,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","pixelRatio":1.5,"statBarHeight":36,"viewportRect":{"left":0,"top":36,"width":480,"height":764}}}
+2023-06-29 11:10:12:670 [HTTP] <-- POST /wd/hub/session 200 10608 ms - 1081
+2023-06-29 11:10:12:671 [HTTP] 
+2023-06-29 11:10:12:791 [HTTP] --> POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/timeouts
+2023-06-29 11:10:12:791 [HTTP] {"implicit":20000}
+2023-06-29 11:10:12:794 [W3C (a88f5b63)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,20000,"a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:12:795 [BaseDriver] W3C timeout argument: {"implicit":20000}}
+2023-06-29 11:10:12:795 [BaseDriver] Set implicit wait to 20000ms
+2023-06-29 11:10:12:796 [W3C (a88f5b63)] Responding to client with driver.timeouts() result: null
+2023-06-29 11:10:12:796 [HTTP] <-- POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/timeouts 200 5 ms - 14
+2023-06-29 11:10:12:797 [HTTP] 
+2023-06-29 11:10:13:421 [HTTP] --> POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements
+2023-06-29 11:10:13:422 [HTTP] {"using":"xpath","value":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']"}
+2023-06-29 11:10:13:424 [W3C (a88f5b63)] Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:13:424 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-06-29 11:10:13:425 [BaseDriver] Waiting up to 20000 ms for condition
+2023-06-29 11:10:13:426 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:13:427 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:13:854 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:13:855 [BaseDriver] Waited for 430 ms so far
+2023-06-29 11:10:14:356 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:14:356 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:14:420 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:14:420 [BaseDriver] Waited for 995 ms so far
+2023-06-29 11:10:14:920 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:14:921 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:15:011 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:15:011 [BaseDriver] Waited for 1586 ms so far
+2023-06-29 11:10:15:513 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:15:513 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:15:576 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:15:576 [BaseDriver] Waited for 2151 ms so far
+2023-06-29 11:10:16:078 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:16:078 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:16:118 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:16:118 [BaseDriver] Waited for 2693 ms so far
+2023-06-29 11:10:16:619 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:16:620 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:16:675 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:16:676 [BaseDriver] Waited for 3251 ms so far
+2023-06-29 11:10:17:177 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:17:177 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:17:229 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:17:229 [BaseDriver] Waited for 3804 ms so far
+2023-06-29 11:10:17:279 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:17:279 [HTTP] {}
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:17:280 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:17:281 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:17:281 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:17:281 [HTTP] 
+2023-06-29 11:10:17:730 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:17:730 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:17:932 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:17:932 [BaseDriver] Waited for 4507 ms so far
+2023-06-29 11:10:18:432 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:18:432 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:18:567 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:18:568 [BaseDriver] Waited for 5143 ms so far
+2023-06-29 11:10:19:069 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:19:070 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:19:133 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:19:133 [BaseDriver] Waited for 5708 ms so far
+2023-06-29 11:10:19:635 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:19:635 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:19:684 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:19:684 [BaseDriver] Waited for 6259 ms so far
+2023-06-29 11:10:20:186 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:20:186 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:20:245 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:20:245 [BaseDriver] Waited for 6820 ms so far
+2023-06-29 11:10:20:747 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:20:747 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:20:810 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:20:810 [BaseDriver] Waited for 7385 ms so far
+2023-06-29 11:10:21:310 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:21:310 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:21:377 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:21:378 [BaseDriver] Waited for 7952 ms so far
+2023-06-29 11:10:21:878 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:21:878 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:21:933 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:21:933 [BaseDriver] Waited for 8508 ms so far
+2023-06-29 11:10:22:282 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:22:282 [HTTP] {}
+2023-06-29 11:10:22:283 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:22:283 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:22:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:22:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:22:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:22:284 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:22:285 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:22:285 [HTTP] 
+2023-06-29 11:10:22:435 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:22:435 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:22:499 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:22:499 [BaseDriver] Waited for 9074 ms so far
+2023-06-29 11:10:23:001 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:23:001 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:23:053 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:23:053 [BaseDriver] Waited for 9628 ms so far
+2023-06-29 11:10:23:554 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:23:554 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:23:600 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:23:600 [BaseDriver] Waited for 10175 ms so far
+2023-06-29 11:10:24:101 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:24:101 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:24:167 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:24:167 [BaseDriver] Waited for 10742 ms so far
+2023-06-29 11:10:24:668 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:24:668 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:24:723 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:24:723 [BaseDriver] Waited for 11298 ms so far
+2023-06-29 11:10:25:223 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:25:224 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:25:277 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:25:277 [BaseDriver] Waited for 11852 ms so far
+2023-06-29 11:10:25:777 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:25:777 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:25:819 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:25:819 [BaseDriver] Waited for 12394 ms so far
+2023-06-29 11:10:26:319 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:26:320 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:26:380 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:26:380 [BaseDriver] Waited for 12955 ms so far
+2023-06-29 11:10:26:882 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:26:882 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:26:932 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:26:932 [BaseDriver] Waited for 13507 ms so far
+2023-06-29 11:10:27:282 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:27:282 [HTTP] {}
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:27:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:27:284 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:27:285 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:27:285 [HTTP] 
+2023-06-29 11:10:27:434 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:27:434 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:27:501 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:27:501 [BaseDriver] Waited for 14076 ms so far
+2023-06-29 11:10:28:001 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:28:001 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:28:050 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:28:050 [BaseDriver] Waited for 14625 ms so far
+2023-06-29 11:10:28:552 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:28:552 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:28:606 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:28:606 [BaseDriver] Waited for 15181 ms so far
+2023-06-29 11:10:29:107 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:29:107 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:29:158 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:29:158 [BaseDriver] Waited for 15733 ms so far
+2023-06-29 11:10:29:659 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:29:659 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:29:703 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:29:703 [BaseDriver] Waited for 16278 ms so far
+2023-06-29 11:10:30:203 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:30:203 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:30:269 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:30:270 [BaseDriver] Waited for 16845 ms so far
+2023-06-29 11:10:30:771 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:30:771 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:30:821 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:30:821 [BaseDriver] Waited for 17396 ms so far
+2023-06-29 11:10:31:323 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:31:323 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:31:374 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:31:374 [BaseDriver] Waited for 17949 ms so far
+2023-06-29 11:10:31:876 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:31:876 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:31:932 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:31:932 [BaseDriver] Waited for 18507 ms so far
+2023-06-29 11:10:32:283 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:32:284 [HTTP] {}
+2023-06-29 11:10:32:284 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:32:284 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:32:285 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:32:286 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:32:287 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 3 ms - 1948
+2023-06-29 11:10:32:287 [HTTP] 
+2023-06-29 11:10:32:433 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:32:434 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:32:475 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:32:475 [BaseDriver] Waited for 19050 ms so far
+2023-06-29 11:10:32:977 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:32:977 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:33:030 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:33:030 [BaseDriver] Waited for 19605 ms so far
+2023-06-29 11:10:33:426 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:33:426 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/festivalTextView']","context":"","multiple":true}
+2023-06-29 11:10:33:499 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[]}
+2023-06-29 11:10:33:499 [W3C (a88f5b63)] Responding to client with driver.findElements() result: []
+2023-06-29 11:10:33:500 [HTTP] <-- POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements 200 20078 ms - 12
+2023-06-29 11:10:33:500 [HTTP] 
+2023-06-29 11:10:33:605 [HTTP] --> POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements
+2023-06-29 11:10:33:605 [HTTP] {"using":"xpath","value":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']"}
+2023-06-29 11:10:33:606 [W3C (a88f5b63)] Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']","a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:33:606 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-06-29 11:10:33:606 [BaseDriver] Waiting up to 20000 ms for condition
+2023-06-29 11:10:33:607 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:33:607 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']","context":"","multiple":true}
+2023-06-29 11:10:33:693 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[{"ELEMENT":"00000000-0000-02d3-ffff-ffff0000000b","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-02d3-ffff-ffff0000000b"}]}
+2023-06-29 11:10:33:693 [W3C (a88f5b63)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-02d3-ffff-ffff0000000b","ELEMENT":"00000000-0000-02d3-ffff-ffff0000000b"}]
+2023-06-29 11:10:33:694 [HTTP] <-- POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements 200 89 ms - 139
+2023-06-29 11:10:33:694 [HTTP] 
+2023-06-29 11:10:33:699 [HTTP] --> POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements
+2023-06-29 11:10:33:700 [HTTP] {"using":"xpath","value":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']"}
+2023-06-29 11:10:33:700 [W3C (a88f5b63)] Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']","a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:33:700 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-06-29 11:10:33:700 [BaseDriver] Waiting up to 20000 ms for condition
+2023-06-29 11:10:33:700 [WD Proxy] Matched '/elements' to command name 'findElements'
+2023-06-29 11:10:33:700 [WD Proxy] Proxying [POST /elements] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id='com.energyaustralia.codingtestsample:id/titleTextView']","context":"","multiple":true}
+2023-06-29 11:10:33:750 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":[{"ELEMENT":"00000000-0000-02d3-ffff-ffff0000000b","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-02d3-ffff-ffff0000000b"}]}
+2023-06-29 11:10:33:750 [W3C (a88f5b63)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-02d3-ffff-ffff0000000b","ELEMENT":"00000000-0000-02d3-ffff-ffff0000000b"}]
+2023-06-29 11:10:33:751 [HTTP] <-- POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/elements 200 51 ms - 139
+2023-06-29 11:10:33:751 [HTTP] 
+2023-06-29 11:10:33:758 [HTTP] --> GET /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element/00000000-0000-02d3-ffff-ffff0000000b/text
+2023-06-29 11:10:33:758 [HTTP] {}
+2023-06-29 11:10:33:759 [W3C (a88f5b63)] Driver proxy active, passing request on via HTTP proxy
+2023-06-29 11:10:33:760 [WD Proxy] Matched '/wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element/00000000-0000-02d3-ffff-ffff0000000b/text' to command name 'getText'
+2023-06-29 11:10:33:760 [WD Proxy] Proxying [GET /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element/00000000-0000-02d3-ffff-ffff0000000b/text] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element/00000000-0000-02d3-ffff-ffff0000000b/text] with no body
+2023-06-29 11:10:33:795 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":"Something went badly wrong... Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')\n at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 1]"}
+2023-06-29 11:10:33:795 [WD Proxy] Replacing sessionId f23679af-ee6c-4cbc-bf39-efe76fb1f324 with a88f5b63-e57f-47c9-bf49-a74b9cf809f1
+2023-06-29 11:10:33:796 [HTTP] <-- GET /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element/00000000-0000-02d3-ffff-ffff0000000b/text 200 38 ms - 340
+2023-06-29 11:10:33:796 [HTTP] 
+2023-06-29 11:10:34:811 [HTTP] --> POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element
+2023-06-29 11:10:34:811 [HTTP] {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));"}
+2023-06-29 11:10:34:812 [W3C (a88f5b63)] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:34:812 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-06-29 11:10:34:812 [BaseDriver] Waiting up to 20000 ms for condition
+2023-06-29 11:10:34:812 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:34:812 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:37:279 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:37:279 [HTTP] {}
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:37:280 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:37:281 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:37:281 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:37:281 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:37:281 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:37:282 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:37:282 [HTTP] 
+2023-06-29 11:10:37:432 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:37:432 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:37:432 [BaseDriver] Waited for 2620 ms so far
+2023-06-29 11:10:37:933 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:37:933 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:40:335 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:40:335 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:40:336 [BaseDriver] Waited for 5523 ms so far
+2023-06-29 11:10:40:837 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:40:837 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:42:282 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:42:282 [HTTP] {}
+2023-06-29 11:10:42:282 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:42:283 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:42:284 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:42:284 [HTTP] 
+2023-06-29 11:10:43:449 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:43:450 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:43:450 [BaseDriver] Waited for 8638 ms so far
+2023-06-29 11:10:43:951 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:43:952 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:46:349 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:46:350 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:46:350 [BaseDriver] Waited for 11538 ms so far
+2023-06-29 11:10:46:851 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:46:851 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:47:282 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:47:282 [HTTP] {}
+2023-06-29 11:10:47:282 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:47:282 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:47:282 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:47:283 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:47:284 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:47:284 [HTTP] 
+2023-06-29 11:10:49:333 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:49:333 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:49:333 [BaseDriver] Waited for 14521 ms so far
+2023-06-29 11:10:49:835 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:49:835 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:52:264 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:52:264 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:52:265 [BaseDriver] Waited for 17453 ms so far
+2023-06-29 11:10:52:280 [HTTP] --> GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts
+2023-06-29 11:10:52:281 [HTTP] {}
+2023-06-29 11:10:52:281 [GENERIC (9a4ba1e5)] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+2023-06-29 11:10:52:281 [GENERIC (9a4ba1e5)]     at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:243:15)
+2023-06-29 11:10:52:281 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:423:15
+2023-06-29 11:10:52:281 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+2023-06-29 11:10:52:282 [GENERIC (9a4ba1e5)]     at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+2023-06-29 11:10:52:283 [HTTP] <-- GET /wd/hub/session/9a4ba1e5-e300-4ce2-8cb1-a41cc0a34593/timeouts 404 2 ms - 1948
+2023-06-29 11:10:52:283 [HTTP] 
+2023-06-29 11:10:52:767 [WD Proxy] Matched '/element' to command name 'findElement'
+2023-06-29 11:10:52:767 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/element] with body: {"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector()).scrollIntoView(new UiSelector().text(\"Yan East\"));","context":"","multiple":false}
+2023-06-29 11:10:55:254 [WD Proxy] Got response with status 404: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:70)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2023-06-29 11:10:55:254 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2023-06-29 11:10:55:266 [W3C (a88f5b63)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2023-06-29 11:10:55:266 [W3C (a88f5b63)]     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+2023-06-29 11:10:55:266 [W3C (a88f5b63)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-29 11:10:55:266 [W3C (a88f5b63)]     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+2023-06-29 11:10:55:266 [W3C (a88f5b63)]     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+2023-06-29 11:10:55:267 [HTTP] <-- POST /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/element 404 20456 ms - 782
+2023-06-29 11:10:55:267 [HTTP] 
+2023-06-29 11:10:55:282 [HTTP] --> GET /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/screenshot
+2023-06-29 11:10:55:282 [HTTP] {}
+2023-06-29 11:10:55:282 [W3C (a88f5b63)] Calling AppiumDriver.getScreenshot() with args: ["a88f5b63-e57f-47c9-bf49-a74b9cf809f1"]
+2023-06-29 11:10:55:283 [WD Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2023-06-29 11:10:55:283 [WD Proxy] Proxying [GET /screenshot] to [GET http://127.0.0.1:8256/wd/hub/session/f23679af-ee6c-4cbc-bf39-efe76fb1f324/screenshot] with no body
+2023-06-29 11:10:55:630 [WD Proxy] Got response with status 200: {"sessionId":"f23679af-ee6c-4cbc-bf39-efe76fb1f324","value":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMgCAYAAAD7o7EIAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7J15fFTHle9/3epWL9r3DbSgDUmAViRA7DYEsI1ZTMCD7dgmiSdOJp54\nss1L/GaSeCZ5TpzETsaZGDsmAWwgEGN2m11sEpJAC2iXENrQ0lpaW+/d7w9FHd2+V1J3q9WLdL6f\nD58Pt1S3qm7XrXuqTp06h5eDkwYQBEEQBGFX+I5uAEEQBEHMRkgAEwRBEIQDIAFMEARBEA6ABDBB\nEARBOAASwARBEAThAEgAEwRBEIQDEDi6Aa4En8/DP/3bPOx8LQaB4WIAAI8HGP5+kKuquA9/fKMa\nBZ93GdNsjUDIg9RLALHUDd7+7ohd6AUAUCv1qC3th3JYh6F+LRSD2ulpAEEQxCzkq/+ZgK/+RwIj\n7YOf1OCD/6yxukwSwGbA4wHf+W0KnvlWNHg8Hng89t8BICnLF785kwOVQoe1Xueg19tOCvP5PHj4\nCDAvxQurt4YiZYkfFi3zY+RRK/UovdGDK39rx41THeiTqaEc1tmsDWPh8QCx1A0BYWLwJ9Cj6HQG\n9HdrMNCnmZZ2EAThnIRFS7Hy6RCsfDoUYdEShEVLjX971DiMR40K5H3WjrzPOvCocdgubXpjXxp+\n9mKJXeoyBx454pgYHg+4KN8AiaeAJXjHQ6834MnwC9Co9Rjq10Kvm9pP7CbgISxaivXPhuOZb0bD\nL1gEjUoP5bDOKGD5bjyIpW6QeLgBAB5UDODAL+tx7UQHhvptvxqWegnw+JfD8C+/TIa7mA83wciP\no9Ma4CbgQa8HYACUwzoc+m0D9v1XnU0nJARBOCertoRiz/+NR3yaDwBM+N0c1RTWlsjx4U9rcfV4\n+7S16419aXjiK3OwhHfK4nvM...
+2023-06-29 11:10:55:630 [W3C (a88f5b63)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAeAAAAMgCAYAAAD7o7EIAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7J15fFTHle9/3epWL9r3DbSgDUmAViRA7DYEsI1ZTMCD7dgmiSdOJp54\nss1L/GaSeCZ5TpzETsaZGDsmAWwgEGN2m11sEpJAC2iXENrQ0lpaW+/d7w9FHd2+V1J3q9WLdL6f\nD58Pt1S3qm7XrXuqTp06h5eDkwYQBEEQBGFX+I5uAEEQBEHMRkgAEwRBEIQDIAFMEARBEA6ABDBB\nEARBOAASwARBEAThAEgAEwRBEIQDEDi6Aa4En8/DP/3bPOx8LQaB4WIAAI8HGP5+kKuquA9/fKMa\nBZ93GdNsjUDIg9RLALHUDd7+7ohd6AUAUCv1qC3th3JYh6F+LRSD2ulpAEEQxCzkq/+ZgK/+RwIj\n7YOf1OCD/6yxukwSwGbA4wHf+W0KnvlWNHg8Hng89t8BICnLF785kwOVQoe1Xueg19tOCvP5PHj4\nCDAvxQurt4YiZYkfFi3zY+RRK/UovdGDK39rx41THeiTqaEc1tmsDWPh8QCx1A0BYWLwJ9Cj6HQG\n9HdrMNCnmZZ2EAThnIRFS7Hy6RCsfDoUYdEShEVLjX971DiMR40K5H3WjrzPOvCocdgubXpjXxp+\n9mKJXeoyBx454pgYHg+4KN8AiaeAJXjHQ6834MnwC9Co9Rjq10Kvm9pP7CbgISxaivXPhuOZb0bD\nL1gEjUoP5bDOKGD5bjyIpW6QeLgBAB5UDODAL+tx7UQHhvptvxqWegnw+JfD8C+/TIa7mA83wciP\no9Ma4CbgQa8HYACUwzoc+m0D9v1XnU0nJARBOCertoRiz/+NR3yaDwBM+N0c1RTWlsjx4U9rcfV4\n+7S16419aXjiK3OwhHfK4nvM4fS+ZvzspVKL2uSSAthdzEd0khe0Gj0a7g1MWz08HnBD8wT4bmZK\n3jH8/O...
+2023-06-29 11:10:55:632 [HTTP] <-- GET /wd/hub/session/a88f5b63-e57f-47c9-bf49-a74b9cf809f1/screenshot 200 350 ms - 121442
+2023-06-29 11:10:55:632 [HTTP] 
+2023-06-29 11:10:56:184 [Appium] Received SIGTERM - shutting down
+2023-06-29 11:10:56:185 [Appium] Cleaning up 1 active session
+2023-06-29 11:10:56:185 [Appium] Closing session, cause was 'The process has received SIGTERM signal'
+2023-06-29 11:10:56:185 [Appium] Removing session 'a88f5b63-e57f-47c9-bf49-a74b9cf809f1' from our master session list
+2023-06-29 11:10:56:185 [UiAutomator2] Deleting UiAutomator2 session
+2023-06-29 11:10:56:188 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:189 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:189 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:190 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:190 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:192 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:192 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+2023-06-29 11:10:56:193 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:945:11)
+    at Socket._write (node:net:957:8)
+    at writeOrBuffer (node:internal/streams/writable:399:12)
+    at _write (node:internal/streams/writable:340:10)
+    at Socket.Writable.write (node:internal/streams/writable:344:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:523:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
